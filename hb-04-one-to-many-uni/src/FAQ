@@ -10,7 +10,7 @@ But in course table we do not have column course_id.
 
 Ideally when we say @JoinColumn a new column should be created in course table ... isn't it?
 
-How does @JoinColum know where to find the join column?
+How does @JoinColumn know where to find the join column?
 
 ---
 
@@ -28,7 +28,8 @@ The table in which it is found depends upon the context.
 
 - If the join is for a OneToOne or ManyToOne mapping using a foreign key mapping strategy, the foreign key column is in the table of the source entity or embeddable.
 
-- If the join is for a unidirectional OneToMany mapping using a foreign key mapping strategy, the foreign key is in the table of the target entity. ( What I mention as associated entity )
+- If the join is for a unidirectional OneToMany mapping using a foreign key mapping strategy, the foreign key is in the table of the target entity.
+ ( What I mention as associated entity )
 
 - If the join is for a ManyToMany mapping or for a OneToOne or bidirectional ManyToOne/OneToMany mapping using a join table, the foreign key is in a join table.
 
